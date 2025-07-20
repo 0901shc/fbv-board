@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "board.apps.BoardConfig",  # django 앱 등록
 ]
 
 MIDDLEWARE = [
@@ -102,9 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ko-kr" # 관리자페이지 한국어
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "asia/Seoul" # 한국 시간대로 변경 (현재 위치에 맞게 )
 
 USE_I18N = True
 
