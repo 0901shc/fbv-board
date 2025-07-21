@@ -16,8 +16,9 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import  path, include # include를 사용하여 앱의 urls.py를 포함시킬 수 있음
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("board/", include("board.urls")),  # board 앱의 urls.py를 포함
 ]
